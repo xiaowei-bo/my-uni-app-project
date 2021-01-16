@@ -1,4 +1,4 @@
-import { ENV, xueUrlMap } from './config.js';
+import { ENV, apiMap } from './config.js';
 import { vaild } from './vaild.js'
 
 /**
@@ -47,7 +47,7 @@ function request(conf = {}) {
     const { url, method, data, header } = conf;
     return new Promise((resolve, reject) => {
         uni.request({
-            url: `${xueUrlMap[ENV]}${url}`,
+            url: `${apiMap[ENV]}${url}`,
             method: (method || 'POST').toUpperCase(),
             header: {
                 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',

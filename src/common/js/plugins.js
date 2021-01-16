@@ -1,13 +1,13 @@
 import utils from './utils.js';
 import store from '../../store';
-import { ENV, xueUrlMap } from './config.js';
+import { ENV, apiMap } from './config.js';
 
 export default {
     install(Vue, options) {
         Vue.prototype.$store = store;
         Vue.prototype.$utils = utils;
         Vue.prototype.$ENV = ENV;
-        Vue.prototype.$xueUrlMap = xueUrlMap;
+        Vue.prototype.$apiMap = apiMap;
 
         Vue.filter('u-price', function(price) {
             price = (+price).toFixed(2);

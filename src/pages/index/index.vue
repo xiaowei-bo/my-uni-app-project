@@ -35,7 +35,7 @@ import { mapGetters } from 'vuex';
 		},
 		onLoad() {
 			console.log("$ENV：", this.$ENV);
-			console.log("$xueUrlMap：", this.$xueUrlMap);
+			console.log("$apiMap：", this.$apiMap);
 		},
 		methods: {
 			toConfirm() {
