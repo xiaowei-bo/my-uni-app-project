@@ -1,0 +1,29 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"subpackages": [
+		{
+			"root": "package_common",
+			"name": "common",
+			"pages": [
+				{
+					"path": "webview/index"
+				},
+				{
+					"path": "scan_code/index"
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
